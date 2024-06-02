@@ -1,5 +1,6 @@
 # Recommendation_System
 Book Recommendation System using SVD model.
+
 In this code, we develop a book recommendation system using the SVD (Singular Value Decomposition) algorithm, implemented through the Surprise library. The process begins by installing the necessary libraries, including `pandas` for data manipulation and `scikit-surprise` for the recommendation algorithms. We load and preprocess the Book-Crossing dataset, filtering it to include only users with at least 100 ratings and books rated at least 50 times to ensure robust recommendations. The dataset is then converted into a format suitable for the Surprise library and split into training and testing sets.
 
 The SVD algorithm is used to train a model on the training set. SVD is a popular matrix factorization technique in collaborative filtering, which decomposes the user-item interaction matrix into latent factors, making it effective for recommendation systems due to its ability to handle large and sparse datasets. After training, the model predicts ratings for the test set, and its accuracy is evaluated using RMSE (Root Mean Squared Error).
